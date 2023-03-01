@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed" style="left: 0; right: 0; top: 0; max-height: 100px; z-index: 100;">
+          <div class="container-fluid">
+            <a class="navbar-brand text-primary" href="/topics">
+              <img src="/images/icon.gif" width="30">
+              Blueeit
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link <%= locals.page === 'topics' ? 'active' : '' _%>" href="/topics">Topics</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link <%= locals.page === 'favorites' ? 'active' : '' _%>" href="/favorites">Favoris</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link <%= locals.page === 'newTopic' ? 'active' : '' _%>" href="/newTopic">Créer un topic</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </body>
+</html>

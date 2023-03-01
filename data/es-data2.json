@@ -1,0 +1,6 @@
+{ "create" : { "_index" : "es-msg", "_type" : "messages", "_id": "1" } }
+{"pseudo": "Louloukit", "message": "C'est validé", "post_date": "2021-12-14T20:15:17Z", "topic_id":"1"}
+{ "create" : { "_index" : "es-msg", "_type" : "messages", "_id": "2" } }
+{"pseudo": "Sinax", "message": "FIIIIIIIIIIIIPPPPPPPPPPPPPPPPPPAAAAAAAA", "post_date": "2021-12-14T20:21:10Z", "topic_id":"1"}
+{ "create" : { "_index" : "es-msg", "_type" : "messages", "_id": "3" } }
+{"pseudo": "Sacha", "message": "No rage de mon Pikachu", "post_date": "2021-12-15T10:55:03Z", "topic_id":"3"}

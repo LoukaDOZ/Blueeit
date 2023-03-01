@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('template/header'); -%>
+    <%- include('template/nav_not_connected'); -%>
+    <body class="container-fluid m-0 p-0">
+        <div class="container">
+            <h1 class="mb-3 border-bottom" style="margin-top: 100px;">Connexion</h1>
+
+            <% if (locals.errors && errors.length > 0) { %>
+                <div class="alert alert-danger">
+                    <ul class="mb-0" style="list-style-type: '&#9656 ';">
+                        <% errors.forEach(function(error){ %>
+                            <li>
+                                <%= error %>
+                            </li>
+                        <% }); %>
+                    </ul>
+                </div>
+            <% } %>
+            <form method="post" action="/login">
+                <div class="form-floating">
+                    <input id="username" class="form-control" type="text" name="username" maxlength="32" value="<%= locals.values ? values.username : '' _%>" placeholder="">
+                    <label for="username" class="form-label">Pseudo</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input id="password" class="form-control" type="password" name="password" maxlength="32" placeholder="">
+                    <label for="password" class="form-label">Mot de passe</label>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Se connecter</button>
+            </form>
+
+            <p class="mt-3">Pas encore de compte ? Cliquez <a href="/register">ici</a> pour le créer !</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+{ "create" : { "_index" : "es-topic", "_type" : "topics", "_id": "1" } }
+{"post_date": "2021-12-14T20:10:33Z","title":"FIPA > FISE", "description": "Votre avis sur l'affirmation ?", "pseudo": "Sinax"}
+{ "create" : { "_index" : "es-topic", "_type" : "topics", "_id": "2" } }
+{"post_date": "2021-12-14T22:19:33Z","title":"Gestion de Projet Avancé", "description": "Tout est dans le titre...", "pseudo": "Louloukit"}
+{ "create" : { "_index" : "es-topic", "_type" : "topics", "_id": "3" } }
+{"post_date": "2021-12-15T10:53:39Z","title":"Meilleur Starter Pokémon???", "description": "Quel est votre starter Pokémon préféré (toutes générations) ? ", "pseudo": "Sacha"}

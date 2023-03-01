@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "topics": {
+      "properties": {
+        "post_date": { "type": "date" },
+        "title": { "type": "text"},
+        "description": { "type": "text"},
+        "pseudo": {"type": "text"}
+      }
+    }
+  }
+}

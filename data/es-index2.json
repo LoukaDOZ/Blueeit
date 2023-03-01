@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "messages": {
+      "properties": {
+        "post_date": { "type": "date" },
+        "topic_id": { "type": "text" },
+        "pseudo": {"type": "text"},
+        "message": {"type": "text"}
+      }
+    }
+  }
+}

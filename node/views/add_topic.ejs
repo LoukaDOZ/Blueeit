@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('template/header'); -%>
+    <%- include('template/nav_connected'); -%>
+    <body class="container-fluid m-0 p-0">
+        <div class="container">
+            <h1 class="mb-3 border-bottom" style="margin-top: 100px;">Créer un topic</h1>
+
+            <% if (locals.errors && errors.length > 0) { %>
+                <div class="alert alert-danger">
+                    <ul class="mb-0" style="list-style-type: '&#9656 ';">
+                        <% errors.forEach(function(error){ %>
+                            <li>
+                                <%= error %>
+                            </li>
+                        <% }); %>
+                    </ul>
+                </div>
+            <% } %>
+            <form method="post" action="/newTopic">
+                <div class="form-floating">
+                    <textarea id="title" class="form-control" name="title" maxlength="128" placeholder=""><%= locals.values ? values.title : '' _%></textarea>
+                    <label for="title" class="form-label">Titre</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <textarea id="description" class="form-control" name="description" maxlength="256" placeholder=""><%= locals.values ? values.description : '' _%></textarea>
+                    <label for="description" class="form-label">Description</label>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Créer</button>
+            </form>
+        </div>
+    </body>
+</html>
