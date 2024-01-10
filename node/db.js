@@ -2,13 +2,13 @@ var elasticSearch = require('elasticsearch');
 const { Client } = require('pg');
 
 const esClient = new elasticSearch.Client({
-  host: 'projet-nosql_elasticsearch_1:9200'
+  host: 'blueeit_elasticsearch_1:9200'
 });
 
 const pgClient = new Client({
     user: 'postgres',
     password: 'postgres',
-    host: 'projet-nosql_postgres_1',
+    host: 'blueeit_postgres_1',
     database: 'postgres',
     port: 5432
 });
