@@ -1,30 +1,37 @@
-# Projet-NOSQL
+# Blueeit
 
-Auteurs : Guillaume Descroix - Louka Doz
+A Reddit like web app with Big Data and NoSQL databases (MongoDB & Elasticsearch)
 
-## Installation de notre application
+Authors : Guillaume Descroix - Louka Doz
 
-Les seuls package nécéssaires à installer sur votre machine son **docker** et **docker-compose** :
+## Usage
 
-- [Install Docker](https://docs.docker.com/install/)
-- [Install Docker Compose](https://docs.docker.com/compose/install/)
+The project needs the following packages :
+- [Docker](https://docs.docker.com/install/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 
-Une fois installés, vous pouvez clonner le projet sur votre machine :
+Then, the project can be cloned :
 
-- `git clone https://gitlab.pedago.ensiie.fr/guillaume.descroix/projet-nosql.git `
-- `cd projet-nosql`
+- `git clone https://github.com/LoukaDOZ/Blueeit.git`
+- `cd ./Blueeit/`
 
-Vous pouvez désormais lancer l'installation :
+Finally, use the following command to start the project :
+- `make run`
 
-- `make install`
-- Le projet tourne sur [http:localhost:3000](http:localhost:3000) !
+Project running on http:localhost:3000!
 
-Quelques commandes utiles :
+### Makefile
 
-- `make stop` Stop les conteneurs
-- `make start` Démarre les conteneurs
-- `make db.connect` Permet la connexion à la base de données Postgres
-- `make install` Reinstalle tous les conteneurs
+| Command            | Description                  |
+| ------------------ | ---------------------------- |
+| `make run`         | Run demo project             |
+| `make bluid`       | Build containers             |
+| `make start`       | Start project                |
+| `make stop`        | Stop project                 |
+| `make clean`       | Remove images and volumes    |
+| `make set_es_data` | Prepare Elasticsearch volume |
+| `make db-install`  | Populate PostgreSQL          |
+| `make es-install`  | Populate Elasticsearch       |
 
 ## Screenshots
 
