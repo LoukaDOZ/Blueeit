@@ -11,14 +11,17 @@ The project needs the following packages :
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
 Then, the project can be cloned :
-
-- `git clone https://github.com/LoukaDOZ/Blueeit.git`
-- `cd ./Blueeit/`
+```bash
+git clone https://github.com/LoukaDOZ/Blueeit.git
+```
 
 Finally, use the following command to start the project :
-- `make run`
+```bash
+cd ./Blueeit/
+make run
+```
 
-Project running on http:localhost:3000!
+Project running on http://localhost:3000!
 
 ### Makefile
 
